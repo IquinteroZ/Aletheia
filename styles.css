@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #2C3E50;     /* Azul oscuro filosófico */
+    --accent-color: #E67E22;      /* Naranja energético */
+    --text-light: #ECF0F1;
+    --font-serif: 'Merriweather', serif;
+    --font-sans: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-sans);
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    width: 90%;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-family: var(--font-serif);
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8)),
+                url('images/hero-bg.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+    font-family: var(--font-serif);
+}
+
+.cta-button {
+    background: var(--accent-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+.philosophy-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 5%;
+}
+
+.philosophy-card {
+    border: 1px solid rgba(44, 62, 80, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.philosophy-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Efectos de scroll suave y responsividad en JS */
