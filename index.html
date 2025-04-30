@@ -3,39 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aletheia - Mentoría Filosófica</title>
+    <title>Aletheia - Conocimiento Integrado</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="publications.html">Publicaciones</a></li>
-        <li><a href="contact.html">Contáctanos</a></li>
-    </ul>
-    <header>
-        <img src="images/logo.png" alt="Logo Aletheia" class="logo">
-        <h1>Aletheia</h1>
-        <p>Filosofía, Ciencia y Tecnología al servicio de la reflexión</p>
+    <!-- Cabecero Fijo -->
+    <header class="header-fijo">
+        <nav>
+            <div class="logo-container">
+                <a href="index.html" class="logo">Aletheia</a>
+            </div>
+            
+            <div class="nav-botones">
+                <!-- Botón Home -->
+                <a href="index.html" class="nav-btn"><i class="fas fa-home"></i></a>
+                
+                <!-- Dropdown Preguntas Kant -->
+                <div class="dropdown">
+                    <button class="nav-btn">Kantian Questions</button>
+                    <div class="dropdown-contenido">
+                        <a href="kant1.html">¿Qué puedo saber?</a>
+                        <a href="kant2.html">¿Qué debo hacer?</a>
+                        <a href="kant3.html">¿Qué me espera?</a>
+                        <a href="kant4.html">¿Qué es el hombre?</a>
+                    </div>
+                </div>
+                
+                <!-- Botones de Contacto -->
+                <div class="contacto-botones">
+                    <div class="dropdown">
+                        <button class="contacto-btn">Ciencias y Tecnología</button>
+                        <div class="dropdown-contenido">
+                            <p>Formación en matemáticas, física, química y tecnología avanzada</p>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="contacto-btn">Filosofía Académica</button>
+                        <div class="dropdown-contenido">
+                            <p>Estudios profundos en filosofía teórica y práctica</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <section class="intro">
-            <h2>Bienvenido</h2>
-            <p>Este es un espacio de escucha, sin juicios ni ideologías, para que puedas valorar tu vida desde el pensamiento crítico.</p>
+    <!-- Contenido Principal -->
+    <main class="contenido-principal">
+        <!-- Sección Izquierda - Reflexión -->
+        <section class="contenedor-izquierdo">
+            <article class="reflexion">
+                <h2>Reflexión del Día</h2>
+                <blockquote>
+                    "El ser humano es la medida de todas las cosas, de las que son en cuanto que son,
+                    y de las que no son en cuanto que no son"
+                </blockquote>
+                <p class="autor">- Protágoras de Abdera</p>
+            </article>
         </section>
 
-        <section class="servicios">
-            <h2>Nuestro enfoque</h2>
-            <ul>
-                <li>Filosofía aplicada</li>
-                <li>Ciencia y sentido</li>
-                <li>Tecnología y humanidad</li>
-            </ul>
+        <!-- Sección Derecha - Personaje -->
+        <section class="contenedor-derecho">
+            <div class="personaje-semana">
+                <h2>Figura de la Semana</h2>
+                <img src="assets/hipatia.jpg" alt="Hipatia de Alejandría">
+                <h3>Hipatia de Alejandría</h3>
+                <p>Matemática y filósofa neoplatónica, símbolo del conocimiento integrado</p>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 Aletheia | Mentoría filosófica para todos</p>
+    <!-- Pie de Página Fijo -->
+    <footer class="footer-estatico">
+        <div class="info-autor">
+            <p>© 2025 Aletheia - Proyecto Académico Interdisciplinario</p>
+        </div>
+        <div class="redes-sociales">
+            <a href="#" class="social-btn"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-tiktok"></i></a>
+        </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
